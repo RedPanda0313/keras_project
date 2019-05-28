@@ -26,11 +26,11 @@ y_test= np_utils.to_categorical(y_test,10)
 #num of choice per parameter
 optimize=7
 activate=4
-layer=2
-conv=5
+layer=3
+conv=3
 
 #num of population,generation
-pop=20
+pop=12
 gen=10
 
 #create first parameters
