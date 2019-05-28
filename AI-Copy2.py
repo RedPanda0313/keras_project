@@ -63,21 +63,20 @@ def mutate():
         
         #mutate
         if np.random.rand(1)<0.25:
-            new_pop[0][j+4]=np.random.randnt(0,activation)
+            new_pop[0][j+4]=np.random.randint(0,activation)
         if np.random.rand(1)<0.25:
             rand1=np.random.randint(0,4)
             rand2=np.random.randint(0,4)
             rand3=np.random.randint(0,4)
             new_pop[1][j+4]=new_pop[1][rand1]+0.75*(new_pop[1][rand2]-new_pop[1][rand3])
         if np.random.rand(1)<0.25:
-            new_pop[2][j+4]=np.random.randnt(0,optimizer)
+            new_pop[2][j+4]=np.random.randint(0,optimizer)
         if np.random.rand(1)<0.25:
             rand1=np.random.randint(0,4)
             rand2=np.random.randint(0,4)
             rand3=np.random.randint(0,4)
             new_pop[3][j+4]=new_pop[3][rand1]+0.75*(new_pop[3][rand2]-new_pop[3][rand3])
-        if np.random.rand(1)<0.25:
-            new_pop[2][j+4]=np.random.randnt(0,optimizer)
+      
     return
 
 
