@@ -54,11 +54,30 @@ print(fake_laye)
 
 def mutate():
     for j in range(pop-4):
-        for i in range(4):
+        
+        #make 3 clones each
+        i=j//activaion
+        for h in range(4):
+            
+            new_pop[h][j+4]=new_pop[h][i]
+        
+        #mutate
+        if np.random.rand(1)<0.25:
+            new_pop[0][j+4]=np.random.randnt(0,activation)
+        if np.random.rand(1)<0.25:
             rand1=np.random.randint(0,4)
             rand2=np.random.randint(0,4)
             rand3=np.random.randint(0,4)
-            new_pop[i][j+4]=new_pop[i][rand1]+0.75*(new_pop[i][rand2]-new_pop[i][rand3])
+            new_pop[1][j+4]=new_pop[1][rand1]+0.75*(new_pop[1][rand2]-new_pop[1][rand3])
+        if np.random.rand(1)<0.25:
+            new_pop[2][j+4]=np.random.randnt(0,optimizer)
+        if np.random.rand(1)<0.25:
+            rand1=np.random.randint(0,4)
+            rand2=np.random.randint(0,4)
+            rand3=np.random.randint(0,4)
+            new_pop[3][j+4]=new_pop[3][rand1]+0.75*(new_pop[3][rand2]-new_pop[3][rand3])
+        if np.random.rand(1)<0.25:
+            new_pop[2][j+4]=np.random.randnt(0,optimizer)
     return
 
 
