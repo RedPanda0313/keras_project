@@ -56,7 +56,7 @@ def mutate():
     for j in range(pop-4):
         
         #make 3 clones each
-        i=j//activaion
+        i=j//4
         for h in range(4):
             
             new_pop[h][j+4]=new_pop[h][i]
